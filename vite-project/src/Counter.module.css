@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'vazir';
+    src: url("./fonts/Vazir.woff2"),
+    url("./fonts/Vazir.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    
+    display: flex;
+    justify-content: space-around;
+    /* width: 100%; */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+   
+	border-radius:28px;
+	border:2px solid #f0f0f3;
+	display:inline-block;
+	cursor:pointer;
+	color:#343131;
+	font-family:Arial;
+	font-size:18px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1b2747;
+    background: transparent;
+}
+
+.buttonActive {
+    
+    
+    color: #fbf6f6;
+    background-color: #0c0c0c;
+    
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.wrapper {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.container {
+    font-family: 'Vazir', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 600px;
+    height: 400px; 
+   
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    color: #040404;
+    padding: 20px;
+    
+    flex-grow: 1;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+.imageContainer {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query برای نمایش بهتر در دستگاه‌های کوچکتر */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content, .imageContainer {
+        max-width: 100%;
+    }
+    
+    .image {
+        height: auto;
+        width: 80%;
+    }
+}
